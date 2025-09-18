@@ -120,6 +120,7 @@ app.*.symbols
 
 # Environmental stuff
 *.env
+.env
 
 # Miscellaneous
 *.class
