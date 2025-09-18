@@ -1,0 +1,198 @@
+{
+  "@@locale": "en",
+  
+  "szikedAppTitle": "SZIKED App",
+  "@szikedAppTitle": {
+    "description": "The title of the SZIKED application"
+  },
+
+  "home": "Home",
+  "@home": {
+    "description": "The title of the Homepage"
+  },
+
+  "welcomeUserMorning": "Good morning, {user}!",
+  "@welcomeUserMorning": {
+    "description": "A welcome message shown at homepage during morning hours (05:00-11:59)",
+    "placeholders": {
+      "user": {
+        "example": "Sziasztok Kedveskéim",
+        "type": "String"
+      }
+    }
+  },
+
+  "welcomeUserAfternoon": "Good afternoon, {user}!",
+  "@welcomeUserAfternoon": {
+    "description": "A welcome message shown at homepage during afternoon hours (12:00-17:59)",
+    "placeholders": {
+      "user": {
+        "example": "Sziasztok Kedveskéim",
+        "type": "String"
+      }
+    }
+  },
+
+  "welcomeUserEvening": "Good evening, {user}!",
+  "@welcomeUserEvening": {
+    "description": "A welcome message shown at homepage during evening hours (18:00-21:59)",
+    "placeholders": {
+      "user": {
+        "example": "Sziasztok Kedveskéim",
+        "type": "String"
+      }
+    }
+  },
+
+  "welcomeUserNight": "Good night, {user}!",
+  "@welcomeUserNight": {
+    "description": "A welcome message shown at homepage during night hours (22:00-04:59) on Fri-Sun",
+    "placeholders": {
+      "user": {
+        "example": "Sziasztok Kedveskéim",
+        "type": "String"
+      }
+    }
+  },
+
+  "goToSleepUser": "Go to sleep, {user}!",
+  "@goToSleepUser": {
+    "description": "A welcome message shown at homepage during night hours (22:00-04:59) on Sun-Thu",
+    "placeholders": {
+      "user": {
+        "example": "Sziasztok Kedveskéim",
+        "type": "String"
+      }
+    }
+  },
+  
+  "welcomeSziked": "Welcome to the SZIKED App!",
+  "@welcomeSziked": {
+    "description": "Main welcome message"
+  },
+  
+  "welcomeSzikedSub": "Choose your login method",
+  "@welcomeSzikedSub": {
+    "description": "Subtitle for login method selection"
+  },
+  
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  
+  "register": "Register",
+  "@register": {
+    "description": "Register button text"
+  },
+  
+  "loginKreta": "Login with Kréta",
+  "@loginKreta": {
+    "description": "Kréta login button text"
+  },
+  
+  "welcomeBack": "Welcome back!",
+  "@welcomeBack": {
+    "description": "Welcome message on login page"
+  },
+  
+  "signIntoAccount": "Sign in to your account",
+  "@signIntoAccount": {
+    "description": "Subtitle on login page"
+  },
+  
+  "emailOrId": "Email or KedveskeID",
+  "@emailOrId": {
+    "description": "Label for email or ID input field"
+  },
+  
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  
+  "backToMain": "Back to main menu",
+  "@backToMain": {
+    "description": "Back button text"
+  },
+  
+  "kedveskeId": "KedveskeID",
+  "@kedveskeId": {
+    "description": "Label for KedveskeID input field"
+  },
+  
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  
+  "passwordField": "Password",
+  "@passwordField": {
+    "description": "Password field label"
+  },
+  
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  
+  "createAccount": "Create Account",
+  "@createAccount": {
+    "description": "Title on register page"
+  },
+  
+  "joinSzikedToday": "Create a SZIKED Account today",
+  "@joinSzikedToday": {
+    "description": "Subtitle on register page"
+  },
+  
+  "studentId": "KedveskeID",
+  "@studentId": {
+    "description": "KedveskeID input field"
+  },
+  
+  "kretaLoginSuccess": "Kréta login successful! 🎉",
+  "@kretaLoginSuccess": {
+    "description": "Success message after Kréta login"
+  },
+
+  "logOut": "Log out",
+  "@logOut": {
+    "description": "String used for loging out"
+  },
+
+  "profileOptionsDev": "Profile Options",
+  "@profileOptionsDev": {
+    "description": "String used for profile options"
+  },
+
+  "devOptions": "Developer options",
+  "@devOptions": {
+    "description": "String used for developer options title"
+  },
+
+  "themeOptions": "Theme options",
+  "@themeOptions": {
+    "description": "String used for theme options"
+  },
+
+  "switchToDarkTheme": "Switch to dark theme",
+  "@switchToDarkTheme": {
+    "description": "String used for switching to dark theme"
+  },
+
+  "switchToSystemTheme": "Switch to system theme",
+  "@switchToSystemTheme": {
+    "description": "String used for switching to system theme"
+  },
+
+  "switchToLightTheme": "Switch to light theme",
+  "@switchToLightTheme": {
+    "description": "String used for switching to light theme"
+  },
+
+  "switchToAMOLEDTheme": "Switch to (experimental) AMOLED theme",
+  "@switchToAMOLEDTheme": {
+    "description": "String used for switching to (experimental) AMOLED theme"
+  }
+}
