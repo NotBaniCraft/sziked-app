@@ -4,6 +4,8 @@ import 'package:sziked/helpers/l10n.dart';
 import 'package:sziked/helpers/supabase/profile_data_helper.dart';
 import 'package:sziked/widgets/welcome_widget.dart';
 import 'package:sziked/widgets/home_card_widget.dart';
+import 'package:provider/provider.dart';
+import 'package:sziked/helpers/home_card_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,12 +16,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   String? user;
+  List<Widget> widgets = [];
 
   @override
   void initState() {
     super.initState();
     _loadUser();
   }
+  
 
   Future<void> _loadUser() async {
     user = await ProfileDataHelper.getCustomName();
@@ -28,6 +32,8 @@ class _HomePageState extends State<HomePage> {
   
   @override
   Widget build(BuildContext context) {
+    final widgetProvider = Provider.of<WidgetProvider>(context);
+    
     return Scaffold(
       appBar: CustomAppBar(title: l10n.home),
       body: user == null 
@@ -48,11 +54,12 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(height: 24),
                   HomeCardWidget(
                     usingTemplate: true,
-                    templateType: "assignment",
+                    templateType: "notes",
                     title: "Mrrp mrrp meow meow",
                     description: "Kemikálium",
                     secondaryIcon: Icons.abc,
-                  )
+                  ),
+                  ...widgetProvider.widgets,
                 ],
               ),
             ),

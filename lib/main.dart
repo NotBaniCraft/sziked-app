@@ -7,19 +7,25 @@ import 'package:sziked/helpers/supabase/login_service.dart';
 import 'package:provider/provider.dart';
 import 'package:sziked/helpers/themes/theme_provider.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:sziked/helpers/home_card_provider.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
+  debugPrint(dotenv.env['SUPABASE_URL']);
   await Supabase.initialize(
     url: dotenv.env['SUPABASE_URL']!,
     anonKey: dotenv.env['SUPABASE_ANONKEY']!,
   );
   
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeProvider(),
+    MultiProvider(
+      providers: [
+          ChangeNotifierProvider(create: (_) => ThemeProvider()),
+          ChangeNotifierProvider(create: (_) => WidgetProvider()),
+      ],
       child: MyApp(),
     ),
   );

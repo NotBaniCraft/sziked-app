@@ -131,7 +131,103 @@ class HomeCardWidget extends StatelessWidget {
                 height: 50,
                 child: Center(
                   child: Icon(
-                    Icons.backpack,
+                    Icons.house,
+                    size: 30,
+                  )
+                )
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title!,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    Text(
+                      description!,
+                      overflow: TextOverflow.ellipsis,
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(width: 10),
+              Icon(secondaryIcon!)
+            ],
+          ),
+        ),
+      );
+    } else if (usingTemplate && templateType == "notes") {
+      //if were using the template for new class notes, literally only the icon changes but oh well
+      
+      
+      return Card(
+        child: Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  shape: BoxShape.circle,
+                ),
+                width: 50,
+                height: 50,
+                child: Center(
+                  child: Icon(
+                    Icons.book,
+                    size: 30,
+                  )
+                )
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title!,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    Text(
+                      description!,
+                      overflow: TextOverflow.ellipsis,
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(width: 10),
+              Icon(secondaryIcon!)
+            ],
+          ),
+        ),
+      );
+    } else if (usingTemplate && templateType == "announcement") {
+      //if were using the template for new announcements, literally only the icon changes but oh well
+      
+      
+      return Card(
+        child: Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  shape: BoxShape.circle,
+                ),
+                width: 50,
+                height: 50,
+                child: Center(
+                  child: Icon(
+                    Icons.campaign,
                     size: 30,
                   )
                 )
